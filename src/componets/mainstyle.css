@@ -1,0 +1,219 @@
+/* 
+background: #23252C;
+background-foot: #161619;
+background-body: #1A1B21;
+background-linkdin: #5093E2;
+border -email: 1px solid #D1D5DB;
+background-frontend -dev: #F3BF99;
+
+
+
+ */
+
+body{
+    margin: 0px;
+    background-color: #1C1C1C;
+}
+.main{
+    margin: 40px 60px;
+    background-color: #23252C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+    font-family: Inter,sans-serif;
+}
+
+.container{
+    background-color: #1A1B21;
+    width: 350px;
+    margin: 40px 20px;
+    /* padding: 20px; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+.img{
+    width: auto;
+    height: auto;
+    /* object-fit: fill; */
+    
+}
+.img-real{
+    transition: 500ms;
+    width: 350px;
+    height: 350px;
+    /* transform: scale(30px); */
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.main-body{
+    background-color:#1A1B21 ;
+}
+.text{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 20px;
+}
+.name{
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+.namework{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #F3BF99;
+}
+.but{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly; 
+}
+.but button{
+    width: 100px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.email{
+    background: #FFFFFF;
+    /* gray/300 */
+
+    border: 1px solid #D1D5DB;
+    /* shadow/sm */
+    margin-right:auto ;
+    margin-left:auto ;
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    text-decoration: none;
+}
+.email img{
+    width: 15px;
+}
+.linkdin{
+    background: #5093E2;
+/* shadow/sm */
+    color: white;
+    margin-right:auto ;
+    margin-left:auto ;
+    border: 0px ;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.detail{
+    margin: 40px;
+}
+
+.about{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+}
+.p{
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+.link-img{
+    width: 15px;
+
+}
+/* .detail{
+    margin-bottom: 0px;
+} */
+
+
+.foot{
+    background-color: #161619;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    border-radius: 0px 0px 15px 15px;
+    border-top: 1px solid black;
+}
+.foot a{
+    text-decoration: none;
+}
+.foot a:hover{
+    animation-name: hover;
+    animation-duration: 1s ;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes hover {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.foot a img{
+    width: 27px;
+    
+}
+.github{
+    background-color: white;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width:600px) {
+    .container,.img-real{
+        width: 420px;
+    }
+    .but button{
+        width: 140px;
+        height: 40px;
+    }
+    
+}
+@media only screen and (min-width:1000px) {
+    .container,.img-real{
+        width: 600px;
+    }
+    .container{
+        margin: 100px;
+    }
+    .but button{
+        width:  180px;
+        height: 40px;
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+    .container,.img-real{
+        width: 280px;
+    }
+    .but button{
+        width: 80px;
+    }
+    .main{
+        margin: 20px;
+    }
+    
+}
