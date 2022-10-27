@@ -1,6 +1,6 @@
 import React from "react";
-import portrait from '../image/portrait.jpg';
 import './mainstyle.css';
+import portrait from '../image/portrait.jpg';
 import linkdin from '../image/Vector.png';
 import insta from '../image/instagram.png';
 import github from '../image/github.png';
